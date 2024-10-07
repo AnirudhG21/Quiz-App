@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('download.jpeg'); /* Add a background image */
+    background-size:cover; /* Ensures the entire background image covers the screen */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent header */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffeeba; /* Light hover effect */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+form {
+    max-width: 300px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px -5px;
+    border: 1px 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px -5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.signup h2, .login h2, .test h2  {
+    padding: 20px;
+    color: white;
+
+}
+
+
+.test div{
+    width: 100%;
+    color: #000;
+}
+
+#loginError, #signupError, #testScore {
+    color: red;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Added Google Font -->
+    <style>
+        /* Additional styles for the header and timer */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space between logo and title */
+            padding: 22px 20px;
+            background-color: #007BFF;
+        }
+        .timer {
+            color: white; /* Timer color */
+            font-size: 1.5em; /* Timer font size */
+            margin-left: auto; /* Aligns timer to the right */
+        }
+        main {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mock Test</h1>
+        <div id="timeLeft" class="timer">Time Left: 15:00</div> <!-- Timer on the right -->
+    </header>
+    <main>
+        <form id="testForm">
+            <div id="questionsContainer"></div>
+            <button type="submit">Submit Test</button>
+        </form>
+        <div id="testScore"></div>
+        <button id="restartTestButton" style="display:none;">Restart Test</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
